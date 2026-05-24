@@ -5,7 +5,10 @@ pipeline {
     }
     stages {
         stage("Checkout") {
-            checkout scm
+            steps {
+                checkout scm
+
+            }
         }
         stage("Restore") {
             steps {
